@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Trending Video</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:#070b16;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+min-height:100vh;
+
+}
+
+.card{
+
+max-width:520px;
+width:100%;
+background:#111827;
+border-radius:25px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.08);
+box-shadow:0 15px 50px rgba(0,0,0,.55);
+
+}
+
+.header{
+
+padding:25px;
+text-align:center;
+color:#fff;
+
+}
+
+.badge{
+
+display:inline-block;
+background:#ff004c;
+padding:12px 30px;
+border-radius:50px;
+font-size:22px;
+font-weight:bold;
+margin-bottom:18px;
+
+}
+
+.small{
+
+font-size:20px;
+color:#ddd;
+
+}
+
+.small span{
+
+color:#ffd400;
+
+}
+
+.title{
+
+font-size:48px;
+font-weight:bold;
+margin-top:15px;
+line-height:1.15;
+
+}
+
+.desc{
+
+margin-top:15px;
+font-size:20px;
+color:#bbb;
+
+}
+
+.hero{
+
+position:relative;
+padding:20px;
+
+}
+
+.hero img{
+
+width:100%;
+display:block;
+border-radius:22px;
+
+}
+
+.play{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:100px;
+
+height:100px;
+
+border-radius:50%;
+
+background:#ff004c;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:45px;
+
+color:#fff;
+
+box-shadow:0 0 30px #ff004c;
+
+animation:pulse 1.5s infinite;
+
+}
+
+.views{
+
+position:absolute;
+
+left:35px;
+
+bottom:35px;
+
+background:rgba(0,0,0,.55);
+
+padding:12px 18px;
+
+border-radius:15px;
+
+color:#fff;
+
+font-size:20px;
+
+}
+
+.time{
+
+position:absolute;
+
+right:35px;
+
+bottom:35px;
+
+background:rgba(0,0,0,.55);
+
+padding:12px 18px;
+
+border-radius:15px;
+
+color:#fff;
+
+font-size:20px;
+
+}
+
+.wait{
+
+margin:20px;
+
+padding:20px;
+
+background:#1d2435;
+
+border-radius:15px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:#fff;
+
+}
+
+#timer{
+
+font-size:58px;
+
+color:#ff0055;
+
+font-weight:bold;
+
+}
+
+.btn{
+
+display:block;
+
+margin:20px;
+
+background:linear-gradient(90deg,#ff0066,#ff2a00);
+
+padding:22px;
+
+text-align:center;
+
+border-radius:18px;
+
+color:#fff;
+
+font-size:30px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.03);
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:10px;
+
+padding:20px;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.grid i{
+
+font-size:35px;
+
+color:#ff0055;
+
+margin-bottom:10px;
+
+}
+
+.footer{
+
+padding:20px;
+
+text-align:center;
+
+color:#888;
+
+font-size:14px;
+
+}
+
+@keyframes pulse{
+
+0%{transform:translate(-50%,-50%) scale(1);}
+50%{transform:translate(-50%,-50%) scale(1.1);}
+100%{transform:translate(-50%,-50%) scale(1);}
+
+}
+
+@media(max-width:600px){
+
+.title{
+
+font-size:34px;
+
+}
+
+.grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<div class="badge">
+
+🔥 VIRAL
+
+</div>
+
+<div class="small">
+
+Most Watched <span>Exclusive</span> Video
+
+</div>
+
+<div class="title">
+
+Watch Today's Trending Video 2026
+
+</div>
+
+<div class="desc">
+
+Millions of people are watching this video.
+
+</div>
+
+</div>
+
+<div class="hero">
+
+<img src="banner.png">
+
+<div class="play">
+
+▶
+
+</div>
+
+<div class="views">
+
+👁 2.3M+
+
+</div>
+
+<div class="time">
+
+⏱ 05:32
+
+</div>
+
+</div>
+
+<div class="wait">
+
+<div>
+
+Please wait...
+
+</div>
+
+<div id="timer">
+
+5
+
+</div>
+
+</div>
+
+<a class="btn"
+
+href="https://www.effectivecpmnetwork.com/gaa8femb?key=8a868605fc61c47197da83eee5a8c52a">
+
+▶ WATCH VIDEO NOW
+
+</a>
+
+<div class="grid">
+
+<div>
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<div>Safe</div>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-tv"></i>
+
+<div>HD</div>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-bolt"></i>
+
+<div>Fast</div>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-mobile-screen"></i>
+
+<div>Mobile</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+🔒 Privacy Protected
+
+</div>
+
+</div>
+
+<script>
+
+let s=5;
+
+let i=setInterval(()=>{
+
+s--;
+
+document.getElementById("timer").innerHTML=s;
+
+if(s<=0){
+
+clearInterval(i);
+
+document.getElementById("timer").innerHTML="GO";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
